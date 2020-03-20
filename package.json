@@ -1,10 +1,11 @@
 {
-  "name": "koa-wechat",
+  "name": "koa-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./app"
+    "start": "node ./app",
+    "server": "nodemon ./app"
   },
   "keywords": [],
   "author": "",
