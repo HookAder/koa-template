@@ -1,11 +1,10 @@
 const Router = require('koa-router');
 const router = new Router();
 
-
-router.get('/user',ctx => {
+router.get('/test',ctx => {
   ctx.body = {
     status: 200,
-    msg: 'user/接口调用成功'
+    msg: '/user/test/接口调用成功'
   }
 });
 

@@ -2,6 +2,7 @@ const Koa = require('koa');
 const Router = require('koa-router');
 const static = require('koa-static');
 const bodyParser = require('koa-bodyparser');
+const logger = require('koa-logger');
 const chalk = require('chalk');
 
 const app = new Koa();
@@ -11,6 +12,8 @@ const router = new Router();
 app.use(static('./public'));
 // ctx.request.body
 app.use(bodyParser());
+// router logger 
+app.use(logger());
 app.use(router.routes()).use(router.allowedMethods());
 
 // /api

@@ -5,7 +5,7 @@ const router = new Router();
 router.get('/test',ctx => {
   ctx.body = {
     status: 200,
-    msg: 'test/接口调用成功'
+    msg: '/api/test/接口调用成功'
   }
 });
 
